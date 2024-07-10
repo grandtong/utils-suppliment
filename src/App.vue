@@ -1,26 +1,19 @@
-<!--
- * @Author: zouzheng
- * @Date: 2020-06-08 17:08:55
- * @LastEditors: zouzheng
- * @LastEditTime: 2020-06-09 09:30:11
- * @Description: 这是XXX组件（页面）
---> 
 <template>
   <div id="app">
-    <excel-com></excel-com>
     <iframe-com></iframe-com>
   </div>
 </template>
 
 <script>
-import { ExcelCom, IframeCom } from 'compoment-demo'
+import { IframeCom } from 'compoment-demo'
+import { timeFix } from 'compoment-demo/src/utils/util'
 export default {
   name: 'App',
   components: {
-    ExcelCom,
     IframeCom
   }
 }
+alert(timeFix())
 </script>
 
 <style>
